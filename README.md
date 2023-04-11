@@ -16,13 +16,12 @@ Spesifikasi
 - PhpMyAdmin(MySQL) 5.2.0
 
 Cara Install
-
-- clone projek dengan perintah git clone https://github.com/azzhrsls/keamanan_komputer.git
-- Buka halaman GitHub repository dari project GAZEWHY. Klik tombol "Code" yang terdapat di sebelah kanan atas, kemudian pilih "Download ZIP" atau salin link HTTPS yang terdapat di bawahnya. Jika Anda memilih "Download ZIP", ekstrak file yang telah diunduh ke dalam folder lokal komputer Anda. Jika Anda memilih salin link HTTPS, buka terminal dan jalankan perintah git clone <link HTTPS> untuk mengunduh repository ke dalam folder lokal. Buka terminal dan pindah ke direktori tempat file project diunduh atau dikloning dengan perintah cd <nama_folder>.
-- Jika project menggunakan dependensi, pastikan Anda telah menginstal dependensi-dependensi tersebut dengan menjalankan perintah npm install atau composer install di terminal.
-- Salin file .env.example dengan perintah cp .env.example .env (untuk Mac dan Linux) atau copy .env.example .env (untuk Windows).
+-  Buka halaman GitHub repository dari project GAZEWHY. Klik tombol "Code" yang terdapat di sebelah kanan atas, kemudian salin link HTTPS nya 
+- buka terminal dan jalankan perintah git clone https://github.com/azzhrsls/keamanan_komputer.git
 - Buka file .env dan atur pengaturan database sesuai dengan konfigurasi database yang dimiliki.
-- Jika database belum dibuat, buatlah database baru di server Anda.
+- jalankan perintah composer install pada terminal
+- jalankan perintah php artisan key:generate
+- Jika database belum dibuat, buatlah nama database baru di server phpmyadmin Anda.
 - Jalankan perintah php artisan migrate untuk menjalankan migration dan membuat tabel-tabel di dalam database.
 - Jika ada data yang perlu dimasukkan ke dalam database, jalankan perintah php artisan db:seed untuk menjalankan seeder.
 - Jalankan perintah php artisan serve untuk menjalankan aplikasi di server lokal Anda.
